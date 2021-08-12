@@ -1,0 +1,481 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: arial;
+	outline: none;
+}
+html{
+	scroll-behavior: smooth;
+}
+#header{
+	padding: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+#header h1{
+	font-size: 25px;
+}
+#header nav ul li{
+	display: inline-block;
+	font-size: 12px;
+	width: 50px;
+	text-align: center;
+}
+#header nav ul li a{
+	text-decoration: none;
+	color: black;
+}
+#header nav ul li a:hover{
+	text-decoration: underline;
+}
+#banner{
+	height: 320px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url('../IMGS/banner.jpg');
+	background-size: cover;
+	filter: sepia(60%);
+}
+#banner h1{
+	width: 450px;
+	text-align: center;
+	color: white;
+}
+
+#solucoes{
+	padding: 40px;
+	text-align: center;
+}
+#solucoes p{
+	font-size: 12px;
+	width: 320px;
+	margin: auto;
+	margin-top: 20px;
+}
+#solucoes .verMais{
+	padding: 5px;
+	width: 300px;
+	border-radius: 20px;
+	border: none;
+	border: 1px solid #D4BE8C;
+	background-color: transparent;
+	margin-top: 10px;
+	cursor: pointer;
+	margin-top: 20px;
+	transition-duration: 0.3s;
+}
+#solucoes .verMais:hover{
+	background-color: #D4BE8C;
+	color: white;
+}
+#solucoes main{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+#solucoes main .imgVertical{
+	width: 280px;
+	height: 420px;
+	border-radius: 5px;
+	border: 1px solid #D4BE8C;
+}
+#solucoes main .imgVertical div{
+	background-image: url('../IMGS/vertical.jpg');
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-left: -10px;
+	box-shadow: 10px 10px 10px #ebebeb;
+}
+#solucoes main ul{
+	display: grid;
+	grid-template-columns: repeat(3, 170px);
+	margin-left: 40px;
+}
+#solucoes main ul .separador{
+	grid-column: 1/4;
+	padding: 10px 0px;
+}
+#solucoes main ul .separador hr{
+	height: 0px;
+	border: none;
+	border-top: 1px solid #D4BE8C;
+}
+#solucoes main ul li h5{
+	margin-top: 10px;
+}
+#solucoes main ul li p{
+	width: auto;
+	margin-top: 10px;
+}
+#solucoes main ul li button{
+	padding: 5px;
+	width: 100px;
+	border-radius: 20px;
+	border: none;
+	background-color: #D4BE8C;
+	margin-top: 20px;
+	cursor: pointer;
+}
+#solucoes main ul li{
+	padding: 10px;
+	display: inline-block;
+}
+#solucoes main ul li div{
+	padding: 2px;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #D4BE8C;
+	margin: auto;
+}
+#solucoes main ul li div div{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-image: url('../IMGS/seguros/fundo.png');
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+}
+#solucoes main ul li div div img{
+	width: 20px;
+	padding: 0px;
+	border: none;
+}
+
+#depoimentos{
+	padding: 30px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #A4A4A4;
+}
+#depoimentos h2{
+	color: white;
+}
+#depoimentos h6{
+	margin-top: 20px;
+	font-size: 12px;
+}
+#depoimentos main{
+	margin: 20px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#depoimentos main p{
+	font-size: 13px;
+	margin: 0px 30px;
+	width: 500px;
+}
+#depoimentos main button{
+	font-size: 25px;
+	width: 6px;
+	height: 11px;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+}
+#depoimentos main .left{
+	background-image: url('../IMGS/left.png');
+	background-size: cover;
+}
+#depoimentos main .right{
+	background-image: url('../IMGS/right.png');
+	background-size: cover;
+}
+
+#parceiros{
+	padding: 30px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#parceiros ul{
+	padding: 10px;
+	margin-top: 40px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+#parceiros ul li{
+	display: inline-block;
+	padding: 20px;
+	box-shadow: 0px 3px 3px 2px #D5D5D5;
+	border-radius: 5px;
+	margin-left: 20px;
+	width: 140px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#parceiros ul li img{
+	width: 70px;
+}
+#parceiros div{
+	margin-top: 30px;
+}
+#parceiros div span{
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #D6D6D6;
+	cursor: pointer;
+}
+#parceiros div .selecionado{
+	background-color: #ADADAD;
+	width: 10px;
+	height: 10px;
+}
+
+#sobre{
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#sobre p{
+	width: 750px;
+	font-size: 13px;
+	margin: 30px auto;
+}
+#sobre .fundoSobre{
+	background-color: #D4BE8C;
+	width: 100%;
+	padding: 40px;
+	padding-bottom: 120px;
+}
+#sobre .fundoSobre button{
+	padding: 5px;
+	width: 250px;
+	border-radius: 20px;
+	border: none;
+	border: 1px solid white;
+	background-color: transparent;
+	margin-top: 10px;
+	cursor: pointer;
+	transition-duration: 0.3s;
+}
+#sobre .fundoSobre button:hover{
+	background-color: white;
+}
+#sobre .conversa{
+	margin-top: -70px;
+	width: 900px;
+	background-image: url('../IMGS/form.jpg');
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+#sobre .conversa form{
+	padding: 30px;
+	width: 50%;
+	background-color: rgba(194, 176, 137, 0.9);
+	text-align: left;
+}
+#sobre .conversa form h5{
+	display: inline-block;
+	padding: 8px 10px;
+	background-color: white;
+	font-size: 12px;
+}
+#sobre .conversa form p{
+	width: auto;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	color: white;
+}
+form .inputs{
+	display: flex;
+	flex-direction: column;
+}
+form .inputs .dividir{
+	width: auto;
+	display: grid;
+	grid-template-columns: repeat(2, calc(50% - 5px));
+	grid-column-gap: 10px;
+}
+form .inputs .input{
+	padding: 8px;
+	border: none;
+	margin-bottom: 10px;
+}
+form .inputs input[type=submit]{
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	background-color: #D4BE8C;
+	cursor: pointer;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+#sobre .conversa form .info{
+	padding-top: 10px;
+	border-top: 2px solid white;
+}
+#sobre .conversa form .info ul li{
+	display: flex;
+	align-items: center;
+	text-align: left;
+	justify-content: flex-start;
+}
+#sobre .conversa form .info ul li p{
+	width: auto;
+	margin: 10px;
+}
+#sobre .conversa form .info ul li img{
+	width: 20px;
+}
+
+#contato{
+	margin-top: 60px;
+}
+#contato #inscricao{
+	padding: 30px;
+	background-color: #A4A4A4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#contato #inscricao h2{
+	width: 320px;
+	text-align: right;
+	margin: 0px;
+	padding: 0px 20px;
+	font-size: 30px;
+	line-height: 40px;
+	border-right: 1px solid black;
+}
+#contato #inscricao form{
+	width: 300px;
+	margin-left: 20px;
+}
+#contato #inscricao form .inputs input[type=submit]{
+	background-color: black;
+	margin: 0px;
+}
+
+#contato #infoMais{
+	background-color: black;
+	padding-top: 30px;
+}
+#contato #infoMais div{
+	padding: 30px;
+	border-top: 1px solid #D4BE8C;
+	padding-top: 30px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+#contato #infoMais div ul li{
+	color: white;
+	font-size: 12px;
+	display: block;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+#contato #infoMais div ul li img{
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+#contato #infoMais div ul li button{
+	border-radius: 50%;
+	border: 1px solid #D4BE8C;
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
+	cursor: pointer;
+	transition-duration: 0.3s;
+}
+#contato #infoMais div ul li button:hover{
+	background-color: #D4BE8C;
+}
+#contato #infoMais div ul li button img{
+	width: auto;
+	height: 12px;
+	margin: 0px;
+}
+#contato #infoMais div ul{
+	margin-left: 40px;
+}
+#contato #infoMais div ul li a{
+	text-decoration: none;
+	color: white;
+}
+#contato #infoMais div ul li a:hover{
+	text-decoration: underline;
+}
+#contato #infoMais div ul li h5{
+	font-size: 15px;
+	margin-bottom: 20px;
+	color: #D4BE8C;
+}
+
+#contato #mapa{
+	height: 350px;
+	background-image: url('../IMGS/mapa.png');
+	background-size: cover;
+}
+#contato #copy{
+	padding: 20px;
+	background-color: black;
+	color: white;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#contato #copy button{
+	padding: 5px;
+	width: 270px;
+	border-radius: 20px;
+	border: none;
+	background-color: transparent;
+	border: 1px solid #E0E000;
+	margin-top: 10px;
+	cursor: pointer;
+	color: white;
+	transition-duration: 0.3s;
+}
+#contato #copy button:hover{
+	color: black;
+	background-color: #E0E000;
+}
+#contato #copy p{
+	margin-top: 20px;
+	font-size: 12px;
+}
+#contato #copy p a{
+	text-decoration: none;
+	color: #E0E000;
+}
+#contato #copy p a:hover{
+	text-decoration: underline;
+}
